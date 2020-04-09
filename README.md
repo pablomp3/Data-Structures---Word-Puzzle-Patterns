@@ -47,12 +47,12 @@ HINT: use queue/stack to solve this problem.
 
 ## Input
 * 1 line: 
-What: an integer n and a new line character
-Why: matrix dimension will be (n*n)
+ * What: an integer n and a new line character
+ * Why: matrix dimension will be (n*n)
 
 * n lines:
-What: n lines of n characters followed by a new line character
-Why: word puzzle layout
+ * What: n lines of n characters followed by a new line character
+ * Why: word puzzle layout
 
 * (n+1 lines in total)
 
