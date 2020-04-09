@@ -1,7 +1,7 @@
 # Data-Structures---Word-Puzzle-Patterns
 https://acm.cs.nthu.edu.tw/problem/12186/
 ## Description
-What:
+**What:**
 
 The Data Structures TAs enjoy making word puzzles. Ron has challenged Eva to find all combinations of letters matching the following rule:
 
@@ -11,52 +11,50 @@ Where c is a consonant and v is a vowel. This means: all strings of concatenatio
 
 Eva wants to check her answers. Help them build that program!
 
-How:
+**How:**
 
-You will be given 2 things: the word puzzle dimension and the word puzzle. You should traverse the matrix from left to right, from top to bottom. For each cell, output all possible paths matching the pattern in the traversal order. To change direction, use the following priorities: down, right, up, left.
+You will be given 2 things: the word puzzle dimension and the word puzzle. You should traverse the matrix from left to right, from top to bottom. For **each cell**, output **all possible paths** matching the pattern in the traversal order. To change direction, use the following priorities: down, right, up, left.
 
 You should also output the rearranged version of the word, where vowels go first and consonants after (example: apple turns into aeppl).
 
-Example:
+**Example:**
 
-For example, take the word puzzle below:
+For example, take the word puzzle below: [lost image]
 
 
 
 Let’s take a look at some combinations:
 
-XS is not valid, because you have 2 consonants in a row
+XS is **not valid**, because you have 2 consonants in a row
 
-AD is not valid, because it begins with a vowel
+AD is **not valid**, because it begins with a vowel
 
-CAT is not valid, because there should be a vowel and a consonant to match the pattern
+CAT is **not valid**, because there should be a vowel and a consonant to match the pattern
 
-COZDP is not valid, because there are three consonants together
+COZDP is **not valid**, because there are three consonants together
 
  
 
-COZOB is valid, because it is of length>=5 and matches the pattern
+COZOB is **valid**, because it is of length>=5 and matches the pattern
 
-XUVAIC is valid, because it is of length>=5 and matches the pattern
+XUVAIC is **valid**, because it is of length>=5 and matches the pattern
 
-NIAVUX is valid, because it is of length>=5 and matches the pattern
+NIAVUX is **valid**, because it is of length>=5 and matches the pattern
 
 
 
 HINT: use queue/stack to solve this problem.
 
 ## Input
-1 line: What: an integer n and a new line character
+* 1 line: 
+What: an integer n and a new line character
+Why: matrix dimension will be (n*n)
 
-           Why: matrix dimension will be (n*n)
+* n lines:
+What: n lines of n characters followed by a new line character
+Why: word puzzle layout
 
-n lines:     What: n lines of n characters followed by a new line character
-
-                 Why: word puzzle layout
-
- 
-
-(n+1 lines in total)
+* (n+1 lines in total)
 
  
 ## Output
